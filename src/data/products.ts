@@ -3,10 +3,10 @@ import { Product } from '../types/product';
 export const products: Product[] = [
   {
     id: 1,
-    title: "Minimal Leather Backpack",
-    price: 109.99,
-    description: "A sleek, minimalist leather backpack perfect for daily use. Features a spacious main compartment and multiple pockets for organization.",
-    category: "accessories",
+    title: "Buddha Statue - Serene Meditation",
+    price: 89.99,
+    description: "Handcrafted Buddha statue made from premium resin. Perfect for meditation spaces and home decor. Brings peace and tranquility to any room.",
+    category: "statues",
     images: [
       "/images/IMG-20250505-WA0147.jpg",
       "/images/IMG-20250505-WA0145.jpg",
@@ -20,10 +20,10 @@ export const products: Product[] = [
   },
   {
     id: 2,
-    title: "Modern Wireless Headphones",
-    price: 249.99,
-    description: "Premium wireless headphones with noise-cancellation technology and crystal-clear sound quality. Ideal for music enthusiasts and professionals.",
-    category: "electronics",
+    title: "Decorative Ceramic Plate Set",
+    price: 129.99,
+    description: "Set of 4 hand-painted ceramic plates with intricate patterns. Perfect for both display and serving. Each piece is unique and handcrafted.",
+    category: "plates",
     images: [
       "/images/IMG-20250505-WA0143.jpg",
       "/images/IMG-20250505-WA0144.jpg",
@@ -37,10 +37,10 @@ export const products: Product[] = [
   },
   {
     id: 3,
-    title: "Organic Cotton T-Shirt",
-    price: 29.99,
-    description: "Sustainable and eco-friendly organic cotton t-shirt. Breathable, comfortable, and perfect for everyday wear.",
-    category: "clothing",
+    title: "Handmade Lamp Shade - Floral Pattern",
+    price: 79.99,
+    description: "Beautiful handcrafted lamp shade featuring delicate floral patterns. Creates a warm, inviting atmosphere in any room.",
+    category: "lamp-shades",
     images: [
       "/images/IMG-20250505-WA0133.jpg",
       "/images/IMG-20250505-WA0132.jpg",
@@ -53,10 +53,10 @@ export const products: Product[] = [
   },
   {
     id: 4,
-    title: "Ceramic Pour-Over Coffee Set",
-    price: 79.99,
-    description: "Handcrafted ceramic pour-over coffee set for the perfect morning brew. Includes ceramic dripper and matching mug.",
-    category: "home",
+    title: "Scented Soy Wax Candle - Lavender",
+    price: 34.99,
+    description: "Hand-poured soy wax candle with natural lavender essential oils. Long-lasting and creates a calming atmosphere.",
+    category: "candles",
     images: [
       "/images/IMG-20250505-WA0130.jpg",
       "/images/IMG-20250505-WA0129.jpg",
@@ -69,10 +69,10 @@ export const products: Product[] = [
   },
   {
     id: 5,
-    title: "Minimalist Quartz Watch",
+    title: "Silver Pendant Necklace",
     price: 159.99,
-    description: "Elegant minimalist watch with Japanese quartz movement and sapphire crystal glass. Water-resistant and suitable for all occasions.",
-    category: "accessories",
+    description: "Elegant sterling silver pendant necklace with unique design. Perfect for both casual and formal occasions.",
+    category: "jewelry",
     images: [
       "/images/IMG-20250505-WA0127.jpg",
       "/images/IMG-20250505-WA0126.jpg",
@@ -86,10 +86,10 @@ export const products: Product[] = [
   },
   {
     id: 6,
-    title: "Handcrafted Wooden Desk Organizer",
-    price: 59.99,
-    description: "Beautifully crafted wooden desk organizer with multiple compartments for stationery and accessories. Made from sustainable oak wood.",
-    category: "home",
+    title: "Abstract Wall Art Print",
+    price: 149.99,
+    description: "Modern abstract art print on premium canvas. Adds a contemporary touch to any living space.",
+    category: "pictures",
     images: [
       "/images/IMG-20250505-WA0124.jpg",
       "/images/IMG-20250505-WA0123.jpg",
@@ -102,10 +102,10 @@ export const products: Product[] = [
   },
   {
     id: 7,
-    title: "Premium Yoga Mat",
-    price: 89.99,
-    description: "Eco-friendly, non-slip yoga mat made from natural rubber. Perfect for yoga enthusiasts of all levels.",
-    category: "fitness",
+    title: "Ganesha Statue - Prosperity",
+    price: 119.99,
+    description: "Handcrafted Ganesha statue symbolizing prosperity and good fortune. Perfect for home or office decor.",
+    category: "statues",
     images: [
       "/images/IMG-20250505-WA0121.jpg",
       "/images/IMG-20250505-WA0120.jpg",
@@ -118,10 +118,10 @@ export const products: Product[] = [
   },
   {
     id: 8,
-    title: "Artisanal Scented Candle",
-    price: 34.99,
-    description: "Hand-poured soy wax candle with essential oil fragrances. Long-burning and perfect for creating a relaxing atmosphere.",
-    category: "home",
+    title: "Decorative Plate - Mandala Design",
+    price: 69.99,
+    description: "Hand-painted decorative plate featuring intricate mandala patterns. Perfect for wall display or table centerpiece.",
+    category: "plates",
     images: [
       "/images/IMG-20250505-WA0118.jpg",
       "/images/IMG-20250505-WA0117.jpg",
@@ -134,10 +134,10 @@ export const products: Product[] = [
   },
   {
     id: 9,
-    title: "Smart Water Bottle",
-    price: 45.99,
-    description: "Stainless steel water bottle with temperature tracking and hydration reminders. Keeps drinks cold for 24 hours or hot for 12 hours.",
-    category: "fitness",
+    title: "Vintage Style Lamp Shade",
+    price: 89.99,
+    description: "Classic vintage-style lamp shade with elegant patterns. Creates a warm, nostalgic atmosphere.",
+    category: "lamp-shades",
     images: [
       "/images/IMG-20250505-WA0115.jpg",
       "/images/IMG-20250505-WA0114.jpg",
@@ -150,10 +150,10 @@ export const products: Product[] = [
   },
   {
     id: 10,
-    title: "Modern Desk Lamp",
-    price: 129.99,
-    description: "Adjustable LED desk lamp with wireless charging base. Multiple brightness settings and color temperatures for optimal lighting.",
-    category: "home",
+    title: "Gold-Plated Earrings",
+    price: 79.99,
+    description: "Elegant gold-plated earrings with unique design. Perfect for adding a touch of sophistication to any outfit.",
+    category: "jewelry",
     images: [
       "/images/IMG-20250505-WA0112.jpg",
       "/images/IMG-20250505-WA0111.jpg",
@@ -166,10 +166,10 @@ export const products: Product[] = [
   },
   {
     id: 11,
-    title: "Natural Linen Throw Blanket",
-    price: 79.99,
-    description: "Soft, lightweight throw blanket made from 100% natural linen. Perfect for adding texture and warmth to any space.",
-    category: "home",
+    title: "Landscape Wall Art",
+    price: 199.99,
+    description: "Beautiful landscape art print on premium canvas. Brings the beauty of nature into your home.",
+    category: "pictures",
     images: [
       "/images/IMG-20250505-WA0145.jpg",
       "/images/IMG-20250505-WA0146.jpg",
@@ -182,10 +182,10 @@ export const products: Product[] = [
   },
   {
     id: 12,
-    title: "Premium Leather Wallet",
-    price: 89.99,
-    description: "Handcrafted genuine leather wallet with RFID protection. Features multiple card slots and a sleek, minimalist design.",
-    category: "accessories",
+    title: "Aromatherapy Candle Set",
+    price: 59.99,
+    description: "Set of 3 scented soy wax candles with different essential oil blends. Perfect for creating a relaxing atmosphere.",
+    category: "candles",
     images: [
       "/images/IMG-20250505-WA0144.jpg",
       "/images/IMG-20250505-WA0134.jpg",

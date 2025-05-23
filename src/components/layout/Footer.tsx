@@ -5,14 +5,14 @@ const Footer = () => {
   return (
     <footer className="bg-black bg-gradient-to-t from-black via-neutral-900 to-black text-white mt-16 border-t border-secondary-foreground/10">
       <div className="container-custom py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="w-full flex flex-col md:flex-row md:items-center md:justify-between gap-12">
           {/* Brand Column */}
-          <div className="space-y-4">
-            <h3 className="text-2xl font-bold tracking-wide text-white">UDARA STORE</h3>
-            <p className="text-white/80 text-sm">
+          <div className="space-y-4 flex flex-col items-center md:items-start md:w-1/2">
+            <h3 className="text-4xl md:text-5xl font-extrabold tracking-wide text-white">UDARA STORE</h3>
+            <p className="text-white/80 text-sm max-w-xs md:max-w-sm text-center md:text-left">
               Established in 1996, UDARA ANTIQUES has been a trusted name for over three decades, offering rare antiques and timeless treasures. Now, we are expanding our passion with interior design services, blending vintage elegance with modern charm.
             </p>
-            <div className="flex space-x-4 mt-4">
+            <div className="flex space-x-4 mt-4 justify-center md:justify-start">
               <a href="#" className="text-white/80 hover:text-primary transition-colors">
                 <span className="sr-only">Facebook</span>
                 <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -34,58 +34,61 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h4 className="text-lg font-medium mb-4 text-white">Quick Links</h4>
-            <ul className="space-y-2">
-              <li>
-                <Link to="/" className="text-white/80 hover:text-primary transition-colors">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/shop" className="text-white/80 hover:text-primary transition-colors">
-                  Shop
-                </Link>
-              </li>
-              <li>
-                <Link to="/about" className="text-white/80 hover:text-primary transition-colors">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className="text-white/80 hover:text-primary transition-colors">
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
+          {/* Quick Links & Customer Service Combined */}
+          <div className="w-full md:w-1/2 flex flex-col md:flex-row justify-end gap-12 md:gap-16">
+            {/* Quick Links */}
+            <div className="flex-1 flex flex-col items-center md:items-end">
+              <h4 className="text-lg font-medium mb-4 text-white">Quick Links</h4>
+              <ul className="space-y-2">
+                <li>
+                  <Link to="/" className="text-white/80 hover:text-primary transition-colors">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/shop" className="text-white/80 hover:text-primary transition-colors">
+                    Shop
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/about" className="text-white/80 hover:text-primary transition-colors">
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contact" className="text-white/80 hover:text-primary transition-colors">
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </div>
 
-          {/* Customer Service */}
-          <div>
-            <h4 className="text-lg font-medium mb-4 text-white">Customer Service</h4>
-            <ul className="space-y-2">
-              <li>
-                <Link to="/faq?tab=faq" className="text-white/80 hover:text-primary transition-colors">
-                  FAQ
-                </Link>
-              </li>
-              <li>
-                <Link to="/faq?tab=shipping" className="text-white/80 hover:text-primary transition-colors">
-                  Shipping & Returns
-                </Link>
-              </li>
-              <li>
-                <Link to="/faq?tab=privacy" className="text-white/80 hover:text-primary transition-colors">
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link to="/faq?tab=terms" className="text-white/80 hover:text-primary transition-colors">
-                  Terms & Conditions
-                </Link>
-              </li>
-            </ul>
+            {/* Customer Service */}
+            <div className="flex-1 flex flex-col items-center md:items-end">
+              <h4 className="text-lg font-medium mb-4 text-white">Customer Service</h4>
+              <ul className="space-y-2">
+                <li>
+                  <Link to="/faq?tab=faq" className="text-white/80 hover:text-primary transition-colors">
+                    FAQ
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/faq?tab=shipping" className="text-white/80 hover:text-primary transition-colors">
+                    Shipping & Returns
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/faq?tab=privacy" className="text-white/80 hover:text-primary transition-colors">
+                    Privacy Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/faq?tab=terms" className="text-white/80 hover:text-primary transition-colors">
+                    Terms & Conditions
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
