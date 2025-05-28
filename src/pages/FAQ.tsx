@@ -18,14 +18,7 @@ const faqs = [
     question: 'What is your return policy?',
     answer: 'We accept returns within 14 days of delivery. Please see our Shipping & Returns page for full details.'
   },
-  {
-    question: 'Do you ship internationally?',
-    answer: 'Yes, we offer international shipping. Shipping costs and delivery times vary by destination.'
-  },
-  {
-    question: 'What are your shipping options?',
-    answer: 'We offer standard shipping (5-7 business days), express shipping (2-3 business days), and next-day delivery options for domestic orders.'
-  },
+  
   
 ];
 
