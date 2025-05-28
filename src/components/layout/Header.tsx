@@ -27,6 +27,9 @@ const Header = () => {
             <Link to="/shop" className="font-medium text-white/80 hover:text-primary transition-colors">
               Shop
             </Link>
+            <Link to="/furniture" className="font-medium text-white/80 hover:text-primary transition-colors">
+              Furniture
+            </Link>
             <Link to="/about" className="font-medium text-white/80 hover:text-primary transition-colors">
               About
             </Link>
@@ -35,6 +38,9 @@ const Header = () => {
             </Link>
             <Link to="/faq" className="font-medium text-white/80 hover:text-primary transition-colors">
               Customer Service
+            </Link>
+            <Link to="/our-products" className="font-medium text-white/80 hover:text-primary transition-colors">
+              Our Products
             </Link>
           </nav>
 
@@ -70,6 +76,13 @@ const Header = () => {
                 Shop
               </Link>
               <Link 
+                to="/furniture" 
+                className="font-medium py-2 text-white/80 hover:text-primary transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Furniture
+              </Link>
+              <Link 
                 to="/about" 
                 className="font-medium py-2 text-white/80 hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
@@ -89,6 +102,13 @@ const Header = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Customer Service
+              </Link>
+              <Link 
+                to="/our-products" 
+                className="font-medium py-2 text-white/80 hover:text-primary transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Our Products
               </Link>
 
               {/* Mobile Icons */}

@@ -10,6 +10,8 @@ import Contact from "./pages/Contact";
 import ProductDetailPage from "./pages/ProductDetailPage";
 import NotFound from "./pages/NotFound";
 import FAQ from "./pages/FAQ";
+import Furniture from "./pages/Furniture";
+import OurProducts from "./pages/OurProducts";
 import React, { useState, useEffect } from 'react';
 
 const queryClient = new QueryClient();
@@ -54,7 +56,9 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/faq" element={<FAQ />} />
+            <Route path="/furniture" element={<Furniture />} />
             <Route path="/product/:id" element={<ProductDetailPage />} />
+            <Route path="/our-products" element={<OurProducts />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

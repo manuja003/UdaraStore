@@ -26,18 +26,7 @@ const faqs = [
     question: 'What are your shipping options?',
     answer: 'We offer standard shipping (5-7 business days), express shipping (2-3 business days), and next-day delivery options for domestic orders.'
   },
-  {
-    question: 'How can I track my order?',
-    answer: "Once your order ships, you'll receive a tracking number via email that you can use to monitor your package's journey."
-  },
-  {
-    question: 'What is your return policy?',
-    answer: 'We accept returns within 30 days of delivery. Items must be unused and in their original packaging.'
-  },
-  {
-    question: 'Do you ship internationally?',
-    answer: 'Yes, we ship to most countries worldwide. International shipping typically takes 7-14 business days.'
-  },
+  
 ];
 
 const tabs = [

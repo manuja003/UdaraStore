@@ -7,19 +7,19 @@ const teamMembers = [
     name: "Pivishka Udana",
     role: "Founder",
     bio: "Pivishka founded UDARA ANTIQUES with a vision to preserve history through beautiful objects.",
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3"
+    image: "/images/team/udana.jpg"
   },
   {
     name: "Chamath Senarathna",
     role: "Official Photographer",
     bio: "Chamath brings 5 years of photography expertise, specializing in capturing the beauty of antique treasures.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3"
+    image: "/images/team/chamath2.jpg"
   },
   {
     name: "Manuja Pinsara",
     role: "Website Developer",
     bio: "Manuja is a website developer with a passion for creating beautiful and functional websites.",
-    image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-4.0.3"
+    image: "/images/team/manuja2.jpg"
   }
 ];
 
