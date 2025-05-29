@@ -76,7 +76,7 @@ const Index = () => {
               </h3>
               <Button asChild size="lg" className="text-base px-6 sm:px-8 py-5 sm:py-6">
                 <a
-                  href="https://facebook.com/yourprofile"
+                  href="https://www.facebook.com/share/1AgM6jCLZF/?mibextid=wwXIfr"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"
@@ -98,7 +98,7 @@ const Index = () => {
               </h3>
               <Button asChild size="lg" className="text-base px-6 sm:px-8 py-5 sm:py-6">
                 <a
-                  href="https://instagram.com/yourprofile"
+                  href="https://www.instagram.com/udara.store_?igsh=MTE5eXhwajEzanhlaw%3D%3D&utm_source=qr"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"

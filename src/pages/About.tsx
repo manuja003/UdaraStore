@@ -44,6 +44,21 @@ const About = () => {
           </div>
         </div>
         
+        {/* Embedded About Us Video */}
+        <div className="container-custom my-12">
+          <div className="aspect-video rounded-xl overflow-hidden shadow-xl max-w-4xl mx-auto">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="About Us Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+        
         {/* Team Component */}
         <Team />
         
