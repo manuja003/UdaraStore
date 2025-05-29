@@ -63,16 +63,25 @@ const Contact = () => {
               <div>
                 <h3 className="font-semibold mb-2">Our Location</h3>
                 <p className="text-muted-foreground">
-                  123 Design Street<br />
-                  Creative District<br />
-                  San Francisco, CA 94103
+                  No,266,Udara Antiques, Peellagoda, Unawatuna, Galle, Srilanka
                 </p>
+                <div className="mt-4 rounded-lg overflow-hidden shadow-md">
+                  <iframe
+                    title="Udara Antiques Location"
+                    src="https://www.google.com/maps?q=Udara+Antiques,+Peellagoda,+Unawatuna,+Galle,+Sri+Lanka&output=embed"
+                    width="100%"
+                    height="200"
+                    style={{ border: 0 }}
+                    allowFullScreen={false}
+                    loading="lazy"
+                  ></iframe>
+                </div>
               </div>
               
               <div>
                 <h3 className="font-semibold mb-2">Contact Information</h3>
                 <p className="text-muted-foreground">
-                  Email: info@novadesign.com<br />
+                  Email: udarastore1996@gmail.com<br />
                   Phone: (555) 123-4567<br />
                   Hours: Monday - Friday, 9am - 5pm PST
                 </p>

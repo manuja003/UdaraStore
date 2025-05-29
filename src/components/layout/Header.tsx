@@ -39,8 +39,8 @@ const Header = () => {
             <Link to="/faq" className="font-medium text-white/80 hover:text-primary transition-colors">
               Customer Service
             </Link>
-            <Link to="/our-products" className="font-medium text-white/80 hover:text-primary transition-colors">
-              Our Products
+            <Link to="/reviews" className="font-medium text-white/80 hover:text-primary transition-colors">
+              Reviews
             </Link>
           </nav>
 
@@ -104,11 +104,11 @@ const Header = () => {
                 Customer Service
               </Link>
               <Link 
-                to="/our-products" 
+                to="/reviews" 
                 className="font-medium py-2 text-white/80 hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Our Products
+                Reviews
               </Link>
 
               {/* Mobile Icons */}

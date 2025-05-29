@@ -60,7 +60,7 @@ const Furniture = () => {
         <p className="text-lg text-center text-gray-700 mb-10 max-w-2xl mx-auto">
           If you love any of these beautiful furniture pieces, you are warmly invited to visit Udara Store and purchase them in person. Experience the quality and craftsmanship up close—your perfect piece is waiting for you!
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
           {furnitureData.map((item) => (
             <div
               key={item.id}

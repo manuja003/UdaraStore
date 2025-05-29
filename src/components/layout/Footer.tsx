@@ -66,8 +66,8 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/our-products" className="text-white/80 hover:text-primary transition-colors">
-                    Our Products
+                  <Link to="/reviews" className="text-white/80 hover:text-primary transition-colors">
+                    Reviews
                   </Link>
                 </li>
               </ul>
@@ -102,8 +102,23 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-secondary-foreground/20 text-center text-white/60 text-sm">
-          <p>© {new Date().getFullYear()} UDARA STORE. All rights reserved.</p>
+        <div className="mt-12 pt-8 border-t border-secondary-foreground/20 w-full flex flex-col md:flex-row md:items-center md:justify-between gap-4 relative">
+          <div className="flex-1 flex justify-center order-1 md:order-none">
+            <p className="text-center text-white/60 text-xs md:text-sm">© {new Date().getFullYear()} UDARA STORE. All rights reserved.</p>
+          </div>
+          <div className="flex items-center gap-2 bg-neutral-900 border border-primary/30 rounded px-2 py-1 shadow-sm order-2 md:order-none md:ml-auto">
+            <div className="flex items-center justify-center w-5 h-5 rounded-full bg-primary/20">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 text-primary">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.5 19.5a7.5 7.5 0 0115 0v.25a.75.75 0 01-.75.75h-13.5a.75.75 0 01-.75-.75v-.25z" />
+              </svg>
+            </div>
+            <div className="text-left">
+              <div className="font-semibold text-primary leading-tight text-xs">Contact Developer</div>
+              <a href="mailto:manuja.20232229@iit.ac.lk" className="text-white/80 hover:text-primary font-medium block text-xs">
+                T.G.Manuja Pinsara
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
