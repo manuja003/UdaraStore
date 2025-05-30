@@ -29,25 +29,59 @@ const SplashScreen = ({ onEnd }: { onEnd: () => void }) => (
     alignItems: 'center',
     justifyContent: 'center',
     transition: 'opacity 0.6s',
+    overflow: 'hidden',
   }}>
-    <video
-      autoPlay
-      muted
-      playsInline
-      style={{
-        width: '100%',
-        height: '100%',
-        objectFit: 'cover',
-      }}
-      onEnded={onEnd}
-    >
-      <source src="/images/splash/WhatsApp Video 2025-05-29 at 22.06.43_f91b7ad0.mp4" type="video/mp4" />
-    </video>
+    <div style={{
+      width: '100%',
+      height: '100%',
+      maxWidth: '100vw',
+      maxHeight: '100vh',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    }}>
+      <video
+        autoPlay
+        muted
+        playsInline
+        className="splash-video"
+        style={{
+          width: '100%',
+          height: '100%',
+          objectFit: 'contain',
+        }}
+        onEnded={onEnd}
+      >
+        <source src="/images/splash/WhatsApp Video 2025-05-29 at 22.06.43_f91b7ad0.mp4" type="video/mp4" />
+      </video>
+    </div>
   </div>
 );
 
 const App = () => {
   const [showSplash, setShowSplash] = useState(true);
+
+  // Add styles for splash video
+  useEffect(() => {
+    const style = document.createElement('style');
+    style.textContent = `
+      .splash-video {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+      
+      @media (max-width: 768px) {
+        .splash-video {
+          object-fit: cover;
+        }
+      }
+    `;
+    document.head.appendChild(style);
+    return () => {
+      document.head.removeChild(style);
+    };
+  }, []);
 
   return (
     <QueryClientProvider client={queryClient}>
