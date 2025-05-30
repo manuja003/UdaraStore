@@ -16,7 +16,7 @@ import React, { useState, useEffect } from 'react';
 
 const queryClient = new QueryClient();
 
-const SplashScreen = () => (
+const SplashScreen = ({ onEnd }: { onEnd: () => void }) => (
   <div style={{
     position: 'fixed',
     top: 0,
@@ -26,29 +26,35 @@ const SplashScreen = () => (
     background: '#000',
     zIndex: 9999,
     display: 'flex',
-    flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
     transition: 'opacity 0.6s',
   }}>
-    <img src="/udara.png" alt="UDARA Logo" style={{ width: 400, height: 400, marginBottom: 32 }} />
+    <video
+      autoPlay
+      muted
+      playsInline
+      style={{
+        width: '100%',
+        height: '100%',
+        objectFit: 'cover',
+      }}
+      onEnded={onEnd}
+    >
+      <source src="/images/splash/WhatsApp Video 2025-05-29 at 22.06.43_f91b7ad0.mp4" type="video/mp4" />
+    </video>
   </div>
 );
 
 const App = () => {
   const [showSplash, setShowSplash] = useState(true);
 
-  useEffect(() => {
-    const timer = setTimeout(() => setShowSplash(false), 3000);
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        {showSplash && <SplashScreen />}
+        {showSplash && <SplashScreen onEnd={() => setShowSplash(false)} />}
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
@@ -67,5 +73,25 @@ const App = () => {
     </QueryClientProvider>
   );
 };
+
+// Add keyframe animations
+const style = document.createElement('style');
+style.textContent = `
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes scaleIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+`;
+document.head.appendChild(style);
 
 export default App;
