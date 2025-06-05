@@ -50,11 +50,13 @@ const About = () => {
             <iframe
               width="100%"
               height="100%"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              src="https://www.instagram.com/p/DIq7yksKBOK/embed/captioned/"
               title="About Us Video"
               frameBorder="0"
+              scrolling="no"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
+              style={{ overflow: 'hidden' }}
             ></iframe>
           </div>
         </div>
