@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Separator } from '@/components/ui/separator';
 import Team from '../components/about/Team';
+import ImageSlideshow from '../components/about/ImageSlideshow';
 import { ArrowRight } from 'lucide-react';
 
 const About = () => {
@@ -35,12 +36,8 @@ const About = () => {
               Every piece in our collection tells a story, carefully selected for its historical significance, craftsmanship, and enduring beauty.
             </p>
           </div>
-          <div className="aspect-square rounded-2xl overflow-hidden shadow-xl animate-fade-in" style={{animationDelay: '400ms'}}>
-            <img 
-              src="https://images.unsplash.com/photo-1664972184438-cf10d8057aa8?ixlib=rb-4.0.3" 
-              alt="Our workshop" 
-              className="w-full h-full object-cover"
-            />
+          <div className="animate-fade-in" style={{animationDelay: '400ms'}}>
+            <ImageSlideshow />
           </div>
         </div>
         
