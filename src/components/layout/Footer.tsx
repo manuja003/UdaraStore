@@ -113,7 +113,7 @@ const Footer = () => {
               </svg>
             </div>
             <div className="text-left">
-              <div className="font-semibold text-primary leading-tight text-xs">Contact Developer</div>
+              <div className="font-semibold text-primary leading-tight text-xs">Designed by</div>
               <a href="mailto:manuja.20232229@iit.ac.lk" className="text-white/80 hover:text-primary font-medium block text-xs">
                 T.G.Manuja Pinsara
               </a>
