@@ -1,27 +1,60 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { furnitureData } from "../data/furniture";
 import Layout from "../components/layout/Layout";
 
 const FurnitureSlideshow = ({ images }: { images: string[] }) => {
   const [current, setCurrent] = useState(0);
+  const [loadedImages, setLoadedImages] = useState<boolean[]>(new Array(images.length).fill(false));
   const total = images.length;
 
   const prev = (e: React.MouseEvent) => {
     e.stopPropagation();
     setCurrent((prev) => (prev === 0 ? total - 1 : prev - 1));
   };
+  
   const next = (e: React.MouseEvent) => {
     e.stopPropagation();
     setCurrent((prev) => (prev === total - 1 ? 0 : prev + 1));
   };
 
+  // Preload next and previous images
+  useEffect(() => {
+    const preloadImage = (index: number) => {
+      if (!loadedImages[index]) {
+        const img = new Image();
+        img.src = images[index];
+        img.onload = () => {
+          setLoadedImages(prev => {
+            const newLoaded = [...prev];
+            newLoaded[index] = true;
+            return newLoaded;
+          });
+        };
+      }
+    };
+
+    // Preload current, next, and previous images
+    preloadImage(current);
+    preloadImage((current + 1) % total);
+    preloadImage((current - 1 + total) % total);
+  }, [current, images, total, loadedImages]);
+
   return (
     <div className="relative w-full h-96 flex items-center justify-center">
-      <img
-        src={images[current]}
-        alt="Furniture"
-        className="w-full h-full object-cover object-center rounded-lg"
-      />
+      <div className="w-full h-full relative">
+        {images.map((src, index) => (
+          <img
+            key={src}
+            src={src}
+            alt={`Furniture view ${index + 1}`}
+            loading="lazy"
+            className={`absolute inset-0 w-full h-full object-cover object-center rounded-lg transition-opacity duration-300 ${
+              index === current ? 'opacity-100' : 'opacity-0'
+            }`}
+            style={{ display: index === current ? 'block' : 'none' }}
+          />
+        ))}
+      </div>
       {total > 1 && (
         <>
           <button
